@@ -1,0 +1,22 @@
+*\u5BFC\u5165\u6570\u636E\u5E93\u540D\u79F0
+sqlname = xxxx
+*\u5BFC\u5165\u6570\u636E\u8868\u683C\u540D\u79F0
+sheetname = work
+*
+sheetname1 = work1
+
+sheetname2 = work2
+
+sheetname3 = work3
+*\u5BFC\u5165\u7528\u4F8B\u540D\u79F0
+excelname = F\:\\EXCEL\u6587\u4EF6\\\u6D4B\u8BD5.xls
+
+excelname1 = F\:\\EXCEL\u6587\u4EF6\\testcasemenu.xls
+
+excelname2 = F\:\\EXCEL\u6587\u4EF6\\isale.xls
+
+excelname3 = F\:\\EXCEL\u6587\u4EF6\\testcasemenu.xls
+
+company = 1
+
+usecasename =ceshi 

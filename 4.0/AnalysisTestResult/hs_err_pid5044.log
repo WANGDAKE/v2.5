@@ -1,0 +1,169 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d90df57, pid=5044, tid=4312
+#
+# Java VM: Java HotSpot(TM) Client VM (11.0-b15 mixed mode windows-x86)
+# Problematic frame:
+# V  [jvm.dll+0x5df57]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x01651400):  VMThread [stack: 0x0b740000,0x0b790000] [id=4312]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x00000300
+
+Registers:
+EAX=0x0173fa20, EBX=0x0173fa5c, ECX=0x000002f4, EDX=0x6da8c108
+ESP=0x0b78f5ac, EBP=0x0173b678, ESI=0x07950de8, EDI=0x07950de8
+EIP=0x6d90df57, EFLAGS=0x00010287
+
+Top of Stack: (sp=0x0b78f5ac)
+0x0b78f5ac:   07950de8 07950de8 6da2ecc0 6d8ce6eb
+0x0b78f5bc:   07950de8 0b78f604 0b78f604 00000002
+0x0b78f5cc:   0173dba8 6d95f8b1 07950f90 0173f878
+0x0b78f5dc:   6d95f681 0173fa20 6d92e9e3 0b78f604
+0x0b78f5ec:   00000000 0173dc00 07950f90 6d95f497
+0x0b78f5fc:   0b78f604 00000000 6da948c8 07950f90
+0x0b78f60c:   00000000 6d95a123 07950f90 07950f90
+0x0b78f61c:   00000000 0b78f734 00000000 6d9ef6a3 
+
+Instructions: (pc=0x6d90df57)
+0x6d90df47:   cc cc cc cc cc cc cc cc cc 51 56 8b f1 8b 4e 04
+0x6d90df57:   8b 51 0c 83 c1 08 8b c2 c1 f8 02 85 d2 89 54 24 
+
+
+Stack: [0x0b740000,0x0b790000],  sp=0x0b78f5ac,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x5df57]
+
+VM_Operation (0x0018f994): GenCollectFull, mode: safepoint, requested by thread 0x0173a400
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0b8e6000 JavaThread "Ôì€Œ À€À€À€áİ´åµİ´Ñ€İ´À€À€À€À€À€À€À€À€À€À€À€À€ç¬İµåµİ´Ğ°İ´À€À€Ë°İ´Ğ‘À€À€è€€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€ç›°İµï¿¿ç¿¿À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€å°¨İ´å›€İ´åŸ İ´å˜İ´å¢˜İ´À€À€À€É˜İ´ä™›À€À€À€Ç İ´ëµ˜æ¶ªØ‚ì€Œ À€À€À€áİ´åµİ´Öİ´À€À€À€À€À€À€À€À€À€À€À€À€ç­°İµåµİ´Ö€İ´À€À€Ñ€İ´Ğ‘À€À€è€€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€ç•°İµï¿ºç¿¿À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€å°¨İ´å›€İ´åŸ İ´å˜İ´å¢˜İ´À€À€À€É˜İ´ä‘›À€À€À€Ç İ´ëµ˜æ¶ªÜƒì€ À€À€À€áİ´åµİ´Û İ´À€À€À€À€À€À€À€À€À€À€À€À€ç¯İµåµİ´Ûİ´À€À€Öİ´Ğ‘À€À€è€€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€ç—İµï¿¼ã¿¿À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€å°¨İ´å›€İ´åŸ İ´å˜İ´å¢˜İ´À€À€À€É˜İ´ä‰›À€À€À€Ç İ´ëµ˜æ¶ªà €ì€Œ À€À€À€áİ´åµİ´à °İ´À€À€À€À€À€À€À€À€À€À€À€À€ç°°İµåµİ´à  İ´À€À€Û İ´Ğ‘À€À€è€€À€À€À€À€À€À€À€À€À€À€À€À€ë¡Ş±À€À€À€À€À€ç˜°İµï¿¿ç¿¿À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€å°¨İ´å›€İ´åŸ İ´å˜İ´å¢˜İ´À€À€À€É˜İ´å›À€À€À€Ç İ´ëµ˜æ¶ªà¤ì€Œ À€À€À€áİ´åµİ´à¦€İ´À€À€À€À€À€À€À€À€À€À€À€À€ç²İµåµİ´à¥°İ´À€À€à °İ´Ğ‘À€À€è€€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€ç°İµï¿¿ç¿¿À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€å°¨İ´å›€İ´åŸ İ´å˜İ´å¢˜İ´À€À€À€É˜İ´ä¥›À€À€À€Ç İ´ëµ˜æ¶ªà¨‚ì€Œ À€À€À€áİ´åµİ´à«İ´À€À€À€À€À€À€À€À€À€À€À€À€ç³°İµåµİ´à«€İ´À€À€à¦€İ´Ğ‘À€À€è€€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€ç”İµï¿ºç¿¿À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€ daemon [_thread_blocked, id=9172, stack(0x0bd40000,0x0bd90000)]
+  0x0b8eb800 JavaThread "Unknown thread" [_thread_blocked, id=8560, stack(0x0bcf0000,0x0bd40000)]
+  0x0b8d9400 JavaThread "Unknown thread" daemon [_thread_in_native, id=9100, stack(0x0bc20000,0x0bc70000)]
+  0x0b8d7c00 JavaThread "Unknown thread" [_thread_blocked, id=5492, stack(0x0bb70000,0x0bbc0000)]
+  0x0b8d5800 JavaThread "À€À€À€À€À€àº‹Ş‚Ñ€İ´À€ISCII91À€À€À€àº«Ş‚ì®ˆİ´á‚˜Ş‚À€À€À€À€À€à»ƒŞ‚Ñ€İ´À€isciiÀ€à»›Ş‚ì®ˆİ´áƒˆŞ‚À€À€À€À€À€à»³Ş‚Ñ€İ´À€ST_SEV_358-88À€à¼›Ş‚ì®ˆİ´á„ˆŞ‚À€À€
+À€À€À€à¼³Ş‚Ñ€İ´
+À€iso-ir-153à½“Ş‚ì®ˆİ´á…€Ş‚À€À€À€À€À€à½«Ş‚Ñ€İ´À€csISO153GOST1976874À€À€À€à¾£Ş‚ì®ˆİ´á†Ş‚À€À€
+À€À€À€à¾»Ş‚Ñ€İ´
+À€ISO-8859-3à¿›Ş‚ì®ˆİ´á‡ˆŞ‚À€À€
+À€À€À€à¿³Ş‚Ñ€İ´
+À€ISO_8859_3á€“Ş‚ì®ˆİ´áˆ€Ş‚À€À€	À€À€À€á€«Ş‚Ñ€İ´	À€iso8859_3À€á‹Ş‚ì®ˆİ´áˆ¸Ş‚À€À€À€À€À€á£Ş‚Ñ€İ´À€8859_3á»Ş‚ì®ˆİ´á‰¨Ş‚À€À€À€À€À€á‚“Ş‚Ñ€İ´À€ISO_8859-3:1988À€À€À€áƒƒŞ‚ì®ˆİ´áŠ°Ş‚À€À€
+À€À€À€áƒ›Ş‚Ñ€İ´
+À€iso-ir-109áƒ»Ş‚ì®ˆİ´á‹¨Ş‚À€À€
+À€À€À€á„“Ş‚Ñ€İ´
+À€ISO_8859-3á„³Ş‚ì®ˆİ´áŒ Ş‚À€À€	À€À€À€á…‹Ş‚Ñ€İ´	À€ISO8859-3À€á…«Ş‚ì®ˆİ´á˜Ş‚À€À€À€À€À€á†ƒŞ‚Ñ€İ´À€latin3á†›Ş‚ì®ˆİ´áˆŞ‚À€À€À€À€À€á†³Ş‚Ñ€İ´À€l3á‡ƒŞ‚ì®ˆİ´á°Ş‚À€À€À€À€À€á‡›Ş‚Ñ€İ´À€ibm913á‡³Ş‚ì®ˆİ´á Ş‚À€À€À€À€À€áˆ‹Ş‚Ñ€İ´À€ibm-913À€À€À€áˆ«Ş‚ì®ˆİ´á˜Ş‚À€À€À€À€À€á‰ƒŞ‚Ñ€İ´À€cp913À€á‰›Ş‚ì®ˆİ´á‘ˆŞ‚À€À€À€À€À€á‰³Ş‚Ñ€İ´À€913À€À€À€áŠ‹Ş‚ì®ˆİ´á‘¸Ş‚À€À€À€À€À€áŠ£Ş‚Ñ€İ´À€csISOLatin3À€À€À€á‹‹Ş‚ì®ˆİ´á’¸Ş‚À€À€
+À€À€À€á‹£Ş‚Ñ€İ´
+À€ISO-8859-6áŒƒŞ‚ì®ˆİ´á“°Ş‚À€À€
+À€À€À€áŒ›Ş‚Ñ€İ´
+À€ISO_8859_6áŒ»Ş‚ì®ˆİ´á”¨Ş‚À€À€	À€À€À€á“Ş‚Ñ€İ´	À€iso8859_6À€á³Ş‚ì®ˆİ´á• Ş‚À€À€À€À€À€á‹Ş‚Ñ€İ´À€8859_6á£Ş‚ì®ˆİ´á–Ş‚À€À€
+À€À€À€á»Ş‚Ñ€İ´
+À€iso-ir-127á›Ş‚ì®ˆİ´á—ˆŞ‚À€À€
+À€À€À€á³Ş‚Ñ€İ´
+À€ISO_8859-6á“Ş‚ì®ˆİ´á˜€Ş‚À€À€À€À€À€á«Ş‚Ñ€İ´À€ISO_8859-6:1987À€À€À€á‘›Ş‚ì®ˆİ´á™ˆŞ‚À€À€	À€À€À€á‘³Ş‚Ñ€İ´	À€ISO8859-6À€á’“Ş‚ì®ˆİ´áš€Ş‚À€À€À€À€À€á’«Ş‚Ñ€İ´À€ECMA-114À€À€á“‹Ş‚ì®ˆİ´áš¸Ş‚À€À€À€À€À€á“£Ş‚Ñ€İ´À€ASMO-708À€À€á”ƒŞ‚ì®ˆİ´á›°Ş‚À€À€À€À€À€á”›Ş‚Ñ€İ´À€arabicá”³Ş‚ì®ˆİ´áœ Ş‚À€À€À€À€À€á•‹Ş‚Ñ€İ´À€ibm1089À€À€À€á•«Ş‚ì®ˆİ´á˜Ş‚À€À€À€À€À€á–ƒŞ‚Ñ€İ´À€ibm-1089À€À€á–£Ş‚ì®ˆİ´áŞ‚À€À€À€À€À€á–»Ş‚Ñ€İ´À€cp1089á—“Ş‚ì®ˆİ´áŸ€Ş‚À€À€À€À€À€á—«Ş‚Ñ€İ´À€1089À€À€á˜ƒŞ‚ì®ˆİ´áŸ°Ş‚À€À€À€À€À€á˜›Ş‚Ñ€İ´À€csISOLatinArabicÀ€À€á™‹Ş‚ì®ˆİ´á ¸Ş‚À€À€
+À€À€À€á™£Ş‚Ñ€İ´
+À€ISO-8859-8ášƒŞ‚ì®ˆİ´á¡°Ş‚À€À€
+À€À€À€áš›Ş‚Ñ€İ´
+À€ISO_8859_8áš»Ş‚ì®ˆİ´á¢¨Ş‚À€À€	À€À€À€á›“Ş‚Ñ€İ´	À€iso8859_8À€á›³Ş‚ì®ˆİ´á£ Ş‚À€À€À€À€À€áœ‹Ş‚Ñ€İ´À€8859_8áœ£Ş‚ì®ˆİ´á¤Ş‚À€À€
+À€À€À€áœ»Ş‚Ñ€İ´
+À€iso-ir-138 [_thread_blocked, id=9560, stack(0x0bb20000,0x0bb70000)]
+  0x01699000 JavaThread "Unknown thread" daemon [_thread_blocked, id=5336, stack(0x0b880000,0x0b8d0000)]
+  0x0166bc00 JavaThread "À€À€À€À€À€å€›Ş‚Ñ€İ´À€ebcdic-cp-chÀ€À€åƒŞ‚ì®ˆİ´åˆ°Ş‚À€À€À€À€À€å›Ş‚Ñ€İ´À€ebcdic-cp-bhÀ€À€å‚ƒŞ‚ì®ˆİ´å‰°Ş‚À€À€À€À€À€å‚›Ş‚Ñ€İ´À€csIBM500À€À€å‚»Ş‚ì®ˆİ´åŠ¨Ş‚À€À€À€À€À€åƒ“Ş‚Ñ€İ´À€x-IBM834À€À€åƒ³Ş‚ì®ˆİ´å‹ Ş‚À€À€À€À€À€å„‹Ş‚Ñ€İ´À€IBM834å„£Ş‚ì®ˆİ´åŒŞ‚À€À€À€À€À€å„»Ş‚Ñ€İ´À€cp834À€å…“Ş‚ì®ˆİ´å€Ş‚À€À€À€À€À€å…«Ş‚Ñ€İ´À€ibm834å†ƒŞ‚ì®ˆİ´å°Ş‚À€À€À€À€À€å†›Ş‚Ñ€İ´À€ibm-834À€À€À€å†»Ş‚ì®ˆİ´å¨Ş‚À€À€À€À€À€å‡“Ş‚Ñ€İ´À€IBM-ThaiÀ€À€å‡³Ş‚ì®ˆİ´å Ş‚À€À€À€À€À€åˆ‹Ş‚Ñ€İ´À€IBM838åˆ£Ş‚ì®ˆİ´åŞ‚À€À€À€À€À€åˆ»Ş‚Ñ€İ´À€cp838À€å‰“Ş‚ì®ˆİ´å‘€Ş‚À€À€À€À€À€å‰«Ş‚Ñ€İ´À€ibm838åŠƒŞ‚ì®ˆİ´å‘°Ş‚À€À€À€À€À€åŠ›Ş‚Ñ€İ´À€ibm-838À€À€À€åŠ»Ş‚ì®ˆİ´å’¨Ş‚À€À€À€À€À€å‹“Ş‚Ñ€İ´À€838À€À€À€å‹«Ş‚ì®ˆİ´å“˜Ş‚À€À€À€À€À€åŒƒŞ‚Ñ€İ´À€IBM870åŒ›Ş‚ì®ˆİ´å”ˆŞ‚À€À€À€À€À€åŒ³Ş‚Ñ€İ´À€cp870À€å‹Ş‚ì®ˆİ´å”¸Ş‚À€À€À€À€À€å£Ş‚Ñ€İ´À€ibm870å»Ş‚ì®ˆİ´å•¨Ş‚À€À€À€À€À€å“Ş‚Ñ€İ´À€ibm-870À€À€À€å³Ş‚ì®ˆİ´å– Ş‚À€À€À€À€À€å‹Ş‚Ñ€İ´À€870À€À€À€å£Ş‚ì®ˆİ´å—Ş‚À€À€À€À€À€å»Ş‚Ñ€İ´À€ebcdic-cp-roeceÀ€À€À€å«Ş‚ì®ˆİ´å˜˜Ş‚À€À€À€À€À€å‘ƒŞ‚Ñ€İ´À€ebcdic-cp-yuÀ€À€å‘«Ş‚ì®ˆİ´å™˜Ş‚À€À€À€À€À€å’ƒŞ‚Ñ€İ´À€csIBM870À€À€å’£Ş‚ì®ˆİ´åšŞ‚À€À€À€À€À€å’»Ş‚Ñ€İ´À€IBM871å““Ş‚ì®ˆİ´å›€Ş‚À€À€À€À€À€å“«Ş‚Ñ€İ´À€cp871À€å”ƒŞ‚ì®ˆİ´å›°Ş‚À€À€À€À€À€å”›Ş‚Ñ€İ´À€ibm871å”³Ş‚ì®ˆİ´åœ Ş‚À€À€À€À€À€å•‹Ş‚Ñ€İ´À€ibm-871À€À€À€å•«Ş‚ì®ˆİ´å˜Ş‚À€À€À€À€À€å–ƒŞ‚Ñ€İ´À€871À€À€À€å–›Ş‚ì®ˆİ´åˆŞ‚À€À€À€À€À€å–³Ş‚Ñ€İ´À€ebcdic-cp-isÀ€À€å—›Ş‚ì®ˆİ´åŸˆŞ‚À€À€À€À€À€å—³Ş‚Ñ€İ´À€csIBM871À€À€å˜“Ş‚ì®ˆİ´å €Ş‚À€À€À€À€À€å˜«Ş‚Ñ€İ´À€x-IBM875À€À€å™‹Ş‚ì®ˆİ´å ¸Ş‚À€À€À€À€À€å™£Ş‚Ñ€İ´À€IBM875å™»Ş‚ì®ˆİ´å¡¨Ş‚À€À€À€À€À€åš“Ş‚Ñ€İ´À€cp875À€åš«Ş‚ì®ˆİ´å¢˜Ş‚À€À€À€À€À€å›ƒŞ‚Ñ€İ´À€ibm875å››Ş‚ì®ˆİ´å£ˆŞ‚À€À€À€À€À€å›³Ş‚Ñ€İ´À€ibm-875À€À€À€åœ“Ş‚ì®ˆİ´å¤€Ş‚À€À€À€À€À€åœ«Ş‚Ñ€İ´À€875À€À€À€åƒŞ‚ì®ˆİ´å¤°Ş‚À€À€À€À€À€å›Ş‚Ñ€İ´À€IBM918å³Ş‚ì®ˆİ´å¥ Ş‚À€À€À€À€À€å‹Ş‚Ñ€İ´À€cp918À€å£Ş‚ì®ˆİ´å¦Ş‚À€À€À€À€À€å»Ş‚Ñ€İ´À€ibm-918À€À€À€åŸ›Ş‚ì®ˆİ´å§ˆŞ‚À€À€À€À€À€åŸ³Ş‚Ñ€İ´À€918À€À€À€å ‹Ş‚ì®ˆİ´å§¸Ş‚À€À€À€À€À€å £Ş‚Ñ€İ´À€ebcdic-cp-ar2À€å¡‹Ş‚ì®ˆİ´å¨¸Ş‚À€À€À€À€À€å¡£Ş‚Ñ€İ´À€x-IBM922À€À€å¢ƒŞ‚ì®ˆİ´å©°Ş‚À€À€À€À€À€å¢› daemon [_thread_blocked, id=3268, stack(0x0b830000,0x0b880000)]
+  0x01659000 
+[error occurred during error reporting (printing all threads), id 0xc0000005]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x01738670] UNKNOWN - owner thread: 0x01651400
+[0x01738ad0] UNKNOWN - owner thread: 0x0173a400
+
+Heap
+ def new generation   total 960K, used 587K [0x03740000, 0x03840000, 0x03c20000)
+  eden space 896K,  62% used [0x03740000, 0x037caff8, 0x03820000)
+  from space 64K,  48% used [0x03830000, 0x03837cb0, 0x03840000)
+  to   space 64K,   0% used [0x03820000, 0x03820000, 0x03830000)
+ tenured generation   total 9220K, used 5639K [0x03c20000, 0x04521000, 0x07740000)
+   the space 9220K,  61% used [0x03c20000, 0x041a1cf8, 0x04177c00, 0x04521000)
+ compacting perm gen  total 12288K, used 4351K [0x07740000, 0x08340000, 0x0b740000)
+   the space 12288K,  35% used [0x07740000, 0x07b7fc28, 0x07b79a00, 0x08340000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	D:\Java\jdk1.6.0_10\bin\javaw.exe
+0x77950000 - 0x77a8c000 	C:\Windows\SYSTEM32\ntdll.dll
+0x77850000 - 0x77924000 	C:\Windows\system32\kernel32.dll
+0x75b10000 - 0x75b5b000 	C:\Windows\system32\KERNELBASE.dll
+0x77ae0000 - 0x77b80000 	C:\Windows\system32\ADVAPI32.dll
+0x772e0000 - 0x7738c000 	C:\Windows\system32\msvcrt.dll
+0x75dd0000 - 0x75de9000 	C:\Windows\SYSTEM32\sechost.dll
+0x770c0000 - 0x77162000 	C:\Windows\system32\RPCRT4.dll
+0x77550000 - 0x77619000 	C:\Windows\system32\USER32.dll
+0x77070000 - 0x770be000 	C:\Windows\system32\GDI32.dll
+0x77a90000 - 0x77a9a000 	C:\Windows\system32\LPK.dll
+0x76f50000 - 0x76fed000 	C:\Windows\system32\USP10.dll
+0x77930000 - 0x7794f000 	C:\Windows\system32\IMM32.DLL
+0x77390000 - 0x7745c000 	C:\Windows\system32\MSCTF.dll
+0x7c340000 - 0x7c396000 	D:\Java\jdk1.6.0_10\jre\bin\msvcr71.dll
+0x6d8b0000 - 0x6db06000 	D:\Java\jdk1.6.0_10\jre\bin\client\jvm.dll
+0x73d10000 - 0x73d42000 	C:\Windows\system32\WINMM.dll
+0x75990000 - 0x759dc000 	C:\Windows\system32\apphelp.dll
+0x6d330000 - 0x6d338000 	D:\Java\jdk1.6.0_10\jre\bin\hpi.dll
+0x76d30000 - 0x76d35000 	C:\Windows\system32\PSAPI.DLL
+0x6d420000 - 0x6d449000 	D:\Java\jdk1.6.0_10\jre\bin\jdwp.dll
+0x6d750000 - 0x6d756000 	D:\Java\jdk1.6.0_10\jre\bin\npt.dll
+0x6d860000 - 0x6d86c000 	D:\Java\jdk1.6.0_10\jre\bin\verify.dll
+0x6d3d0000 - 0x6d3ef000 	D:\Java\jdk1.6.0_10\jre\bin\java.dll
+0x6d8a0000 - 0x6d8af000 	D:\Java\jdk1.6.0_10\jre\bin\zip.dll
+0x6d2a0000 - 0x6d2a7000 	D:\Java\jdk1.6.0_10\jre\bin\dt_socket.dll
+0x77aa0000 - 0x77ad5000 	C:\Windows\system32\WS2_32.dll
+0x75dc0000 - 0x75dc6000 	C:\Windows\system32\NSI.dll
+0x74b10000 - 0x74b20000 	C:\Windows\system32\NLAapi.dll
+0x6d870000 - 0x6d880000 	C:\Windows\system32\napinsp.dll
+0x6d840000 - 0x6d852000 	C:\Windows\system32\pnrpnsp.dll
+0x75490000 - 0x754cc000 	C:\Windows\System32\mswsock.dll
+0x75350000 - 0x75394000 	C:\Windows\system32\DNSAPI.dll
+0x6d830000 - 0x6d838000 	C:\Windows\System32\winrnr.dll
+0x74120000 - 0x7413c000 	C:\Windows\system32\IPHLPAPI.DLL
+0x74100000 - 0x74107000 	C:\Windows\system32\WINNSI.DLL
+0x73b00000 - 0x73b38000 	C:\Windows\System32\fwpuclnt.dll
+0x6d1a0000 - 0x6d1a6000 	C:\Windows\system32\rasadhlp.dll
+0x74fd0000 - 0x74fd5000 	C:\Windows\System32\wshtcpip.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:63181 -Dfile.encoding=gbk 
+java_command: com.xls.test.FileViewer
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\Java\jdk1.6.0_10
+CLASSPATH=.;D:\Java\jdk1.6.0_10\lib\dt.jar;JAVA_HOME\lib\tools.jar;
+PATH=D:\Java\jdk1.6.0_10\jre\bin;D:/Java/jdk1.6.0_10/bin/../jre/bin/client;D:/Java/jdk1.6.0_10/bin/../jre/bin;D:/Java/jdk1.6.0_10/bin/../jre/lib/i386;D:\android-sdks\platform-tools;.;D:\Java\jdk1.6.0_10\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Windows7Master;D:\TortoiseSVN\bin;D:\VisualSVN Server\bin;D:\ant\bin;D:\android-sdks\tools;C:\Program Files\OpenVPN\bin;D:\eclipse\eclipse;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.1 Build 7601 Service Pack 1
+
+CPU:total 8 (8 cores per cpu, 2 threads per core) family 6 model 10 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, ht
+
+Memory: 4k page, physical 2097151k(1439060k free), swap 4194303k(3196020k free)
+
+vm_info: Java HotSpot(TM) Client VM (11.0-b15) for windows-x86 JRE (1.6.0_10-rc2-b32), built on Sep 12 2008 00:52:11 by "java_re" with MS VC++ 7.1
+
+time: Wed Nov 05 18:15:01 2014
+elapsed time: 171 seconds
+

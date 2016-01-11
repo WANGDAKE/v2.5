@@ -1,0 +1,141 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d85df57, pid=10320, tid=16876
+#
+# Java VM: Java HotSpot(TM) Client VM (11.0-b15 mixed mode windows-x86)
+# Problematic frame:
+# V  [jvm.dll+0x5df57]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0171f400):  VMThread [stack: 0x014f0000,0x01540000] [id=16876]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x0002b60c
+
+Registers:
+EAX=0x0156fcc8, EBX=0x0156fd04, ECX=0x0002b600, EDX=0x6d9dc108
+ESP=0x0153f7ac, EBP=0x0156b1b8, ESI=0x079737f0, EDI=0x079737f0
+EIP=0x6d85df57, EFLAGS=0x00010297
+
+Top of Stack: (sp=0x0153f7ac)
+0x0153f7ac:   079737f0 079737f0 6d97ecc0 6d81e6eb
+0x0153f7bc:   079737f0 0153f804 0153f804 00000002
+0x0153f7cc:   0156d620 6d8af8b1 07973828 0156fb20
+0x0153f7dc:   6d8af681 0156fcc8 6d87e9e3 0153f804
+0x0153f7ec:   00000000 0156d678 07973828 6d8af497
+0x0153f7fc:   0153f804 00000000 6d9e48c8 07973828
+0x0153f80c:   00000000 6d8aa123 07973828 07973828
+0x0153f81c:   00000000 0153f934 00000000 6d93f6a3 
+
+Instructions: (pc=0x6d85df57)
+0x6d85df47:   cc cc cc cc cc cc cc cc cc 51 56 8b f1 8b 4e 04
+0x6d85df57:   8b 51 0c 83 c1 08 8b c2 c1 f8 02 85 d2 89 54 24 
+
+
+Stack: [0x014f0000,0x01540000],  sp=0x0153f7ac,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x5df57]
+
+VM_Operation (0x003afa74): GenCollectFull, mode: safepoint, requested by thread 0x0156a000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0b8c9000 JavaThread "À€ À€è‰¸İ·ç­ İ·åµİ·ìˆİ·À€À€À€À€À€À€À€À€À€À€À€À€ç¤˜İ¸åµİ·á¨İ·À€À€è‰¸İ·À€1À€À€À€À€À€À€À€À€À€À€À€À€å¦Ş€è°İ·ì— İ·ç­ İ·ç­ İ·è€İ·åº˜İ·À€À€À€À€À€À€À€À€À€À€ì£İ·À€À€À€À€çŠ İ·À€À€À€À€è«¸İ·À€À€À€À€À€À€À€À€Ä€À€1À€À€ê€€Å–À€À€À€À€À€À€À€À€ê¢°Å²À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€À€WÀ€å°¨İ·ê–İ·åŸ İ·é²°İ·ë°İ·À€À€ç¹¸İ·Å˜À€è‰¸İ·ÅœÀ€À€À€À€À€ì“¸İ·ë°İ·é“ İ·é¨İ·ê½¨İ·À€À€â®¨Ïˆâ®¸Ïˆë‚ç¨»ê¸êƒ°À€À€À€à¦€İ·À€Ã„ÃƒÀ€á€ˆÃ…ÃƒÆ·
+À€À€À€à»ˆİ·Î¼À€í €İ·â°İ¿æ©¨İ¸À€À€À€À€Ëİ·í¯ˆİ·ïŠˆŞªïŠ°Şªí³€İ·ç½€Ş…í³ İ·í³¸İ·í´¸İ·í¶¸İ·í·¨İ·í¹¨İ·íºˆİ·í¿ İ·î…¸İ·î²°İ·æ¾€İ·ïİ·Ëİ·í¯ˆİ·í¯¨İ·ãª€İ·åŒˆİ·í¯¸İ·ã©°İ·ãª İ·å¸İ·í°ˆİ·í°˜İ·æ İ·ã«€İ·å’€İ·ãª°İ·ã«İ·æŸ€İ·ã°İ·ä‚€İ·ã±İ·ãº°İ·ã½°İ·ã°°İ·æ¡˜İ·í°¨İ·ã±°İ·äˆİ·í±¸İ·í²°İ·í³€İ·í³İ·í³ İ·í³¸İ·â©¨İ·â©˜İ·í´ˆİ·í´ İ·í´¸İ·á¯€İ·á®¨İ·í¶€İ·í¶¨İ·í¶¸İ·í·¨İ·í¸İ·á¯İ·í¸ İ·í¹ˆİ·ã®€İ·á®İ·ã®İ·äŠˆİ·äŠ¨İ·í¹¨İ·íºˆİ·íº¸İ·á²°İ·ã®°İ·æ§ İ·äˆ İ·í»İ·í»°İ·í¼ İ·í½İ·í½¸İ·í¾ İ·í¿İ·í¿ İ·í¿°İ·î€ˆİ·î€ İ·â­°İ·î€¸İ·îˆİ·î¨İ·î‚€İ·â¥°İ·å İ·î‚˜İ·î‚¸İ·îƒ˜İ·îƒ°İ·î„İ·æ¨˜İ·î„ İ·î„¸İ·â½€İ·î…˜İ·î…¸İ·î†ˆİ·å‚¸İ·î†¨İ·ã„€İ·î‡İ·æ®˜İ·î‡¨İ·îˆˆİ·îˆ¨İ·î‰€İ·î‰˜İ·î‰°İ·îŠˆİ·îŠ¨İ·î‹ˆİ·î‹ İ·îŒ€İ·îŒ İ·î€İ·î İ·îˆİ·î İ·î€İ·î˜İ·î¸İ·å‹ İ·îİ·â¾°İ·â¿ˆİ·î¨İ·âµİ·î‘€İ·î‘˜İ·î‘¸İ·î’İ·ã‘€İ·î’¨İ·î“ˆİ·ãƒ¨İ·î“¨İ·î”€İ·î” İ·ã¨İ·î”¸İ·î•˜İ·î•°İ·î–İ·î–°İ·î—İ·î—°İ·î˜İ·î˜°İ·î™˜İ·îš€İ·îš İ·î›€İ·î› İ·îœ€İ·îœ İ·î€İ·î İ·î¸İ·î˜İ·îŸ€İ·îŸ İ·î €İ·î  İ·î¡€İ·î¡ İ·î¡¸İ·î¢İ·î¢¨İ·î£€İ·î£¨İ·î¤€İ·î¤ İ·î¥€İ·î¥ İ·î¥¸İ·î¦İ·î¦ İ·î¦¸İ·î§İ·ã°İ·åˆİ·î§¨İ·î¨€İ·î¨˜İ·î¨¸İ·î©˜İ·î©¸İ·îª˜İ·îª¸İ·î«˜İ·î«°İ·î¬İ·î¬¨İ·î­ˆİ·î­ İ·î®€İ·î®˜İ·ãİ·î®¸İ·î¯˜İ·î°€İ·î° İ·î±€İ·æ³ˆİ·î±˜İ·î±°İ·î²˜İ·î²°İ·æ³°İ·â£°İ·î³ˆİ·î³ İ·î³¸İ·î´İ·î´°İ·ã İ·îµİ·ãŒ¸İ·îµ¨İ·î¶€İ·î¶İ·ã˜İ·ãˆİ·î¶¨İ·î·€İ·î·¨İ·î¸€İ·ã¸İ·î¸˜İ·î¸°İ·æ´˜İ·á§˜İ·áˆİ·î¹ˆİ·î¹¨İ·îºˆİ·îº¨İ·î»ˆİ·î»¸İ·á¹€İ·á’ˆİ·á¹¨İ·î¼ İ·á»ˆİ·á»¸İ·á¾ˆİ·á¾¸İ·â İ·â‚ˆİ·â‚°İ·âƒ İ·á¨İ·î¼¸İ·â’°İ·î½˜İ·á¨İ·å¸İ·áˆİ·î¾€İ·áœ€İ·î¾°İ·á¡°İ·á  İ·á¡ˆİ·î¿ İ·ï€İ·â…°İ·áŸ¸İ·ï€İ·ï¨İ·ï‚ˆİ·ï‚°İ·ïƒ˜İ·á¤ˆİ·ï„€İ·ï„ İ·áª˜İ·ï…€İ·ï… İ·ï†€İ·ï†˜İ·ï†°İ·ï‡İ·æ¼˜İ·ï‡¨İ·æ¼°İ·ïˆˆİ·â«ˆİ·ïˆ˜İ·â¾ˆİ·ïˆ°İ·ï‰İ·æ¾€İ·ï daemon [_thread_blocked, id=12080, stack(0x0bdd0000,0x0be20000)]
+  0x0b8c5000 JavaThread "Unknown thread" daemon [_thread_blocked, id=15948, stack(0x0bd80000,0x0bdd0000)]
+  0x0b8ba000 
+[error occurred during error reporting (printing all threads), id 0xc0000005]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x015681b0] UNKNOWN - owner thread: 0x0171f400
+[0x01568610] UNKNOWN - owner thread: 0x0156a000
+
+Heap
+ def new generation   total 960K, used 289K [0x03770000, 0x03870000, 0x03c50000)
+  eden space 896K,  32% used [0x03770000, 0x037b8478, 0x03850000)
+  from space 64K,   0% used [0x03850000, 0x03850000, 0x03860000)
+  to   space 64K,   0% used [0x03860000, 0x03860000, 0x03870000)
+ tenured generation   total 9220K, used 5507K [0x03c50000, 0x04551000, 0x07770000)
+   the space 9220K,  59% used [0x03c50000, 0x041b0d40, 0x041ed000, 0x04551000)
+ compacting perm gen  total 12288K, used 4101K [0x07770000, 0x08370000, 0x0b770000)
+   the space 12288K,  33% used [0x07770000, 0x07b71708, 0x07b6b800, 0x08370000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	D:\Java\jre6\bin\javaw.exe
+0x77580000 - 0x776bc000 	C:\Windows\SYSTEM32\ntdll.dll
+0x76440000 - 0x76514000 	C:\Windows\system32\kernel32.dll
+0x75980000 - 0x759cb000 	C:\Windows\system32\KERNELBASE.dll
+0x763a0000 - 0x76440000 	C:\Windows\system32\ADVAPI32.dll
+0x761b0000 - 0x7625c000 	C:\Windows\system32\msvcrt.dll
+0x762d0000 - 0x762e9000 	C:\Windows\SYSTEM32\sechost.dll
+0x77700000 - 0x777a2000 	C:\Windows\system32\RPCRT4.dll
+0x77350000 - 0x77419000 	C:\Windows\system32\USER32.dll
+0x76140000 - 0x7618e000 	C:\Windows\system32\GDI32.dll
+0x776c0000 - 0x776ca000 	C:\Windows\system32\LPK.dll
+0x760a0000 - 0x7613d000 	C:\Windows\system32\USP10.dll
+0x76190000 - 0x761af000 	C:\Windows\system32\IMM32.DLL
+0x77200000 - 0x772cc000 	C:\Windows\system32\MSCTF.dll
+0x7c340000 - 0x7c396000 	D:\Java\jre6\bin\msvcr71.dll
+0x6d800000 - 0x6da56000 	D:\Java\jre6\bin\client\jvm.dll
+0x73c50000 - 0x73c82000 	C:\Windows\system32\WINMM.dll
+0x75600000 - 0x7564c000 	C:\Windows\system32\apphelp.dll
+0x6d280000 - 0x6d288000 	D:\Java\jre6\bin\hpi.dll
+0x776d0000 - 0x776d5000 	C:\Windows\system32\PSAPI.DLL
+0x6d370000 - 0x6d399000 	D:\Java\jre6\bin\jdwp.dll
+0x6d6a0000 - 0x6d6a6000 	D:\Java\jre6\bin\npt.dll
+0x6d7b0000 - 0x6d7bc000 	D:\Java\jre6\bin\verify.dll
+0x6d320000 - 0x6d33f000 	D:\Java\jre6\bin\java.dll
+0x6d7f0000 - 0x6d7ff000 	D:\Java\jre6\bin\zip.dll
+0x6d1f0000 - 0x6d1f7000 	D:\Java\jre6\bin\dt_socket.dll
+0x76290000 - 0x762c5000 	C:\Windows\system32\WS2_32.dll
+0x776e0000 - 0x776e6000 	C:\Windows\system32\NSI.dll
+0x744e0000 - 0x744f0000 	C:\Windows\system32\NLAapi.dll
+0x6ebf0000 - 0x6ec00000 	C:\Windows\system32\napinsp.dll
+0x6ebd0000 - 0x6ebe2000 	C:\Windows\system32\pnrpnsp.dll
+0x75130000 - 0x7516c000 	C:\Windows\System32\mswsock.dll
+0x74fc0000 - 0x75004000 	C:\Windows\system32\DNSAPI.dll
+0x6ebc0000 - 0x6ebc8000 	C:\Windows\System32\winrnr.dll
+0x743c0000 - 0x743dc000 	C:\Windows\system32\IPHLPAPI.DLL
+0x743b0000 - 0x743b7000 	C:\Windows\system32\WINNSI.DLL
+0x74050000 - 0x74088000 	C:\Windows\System32\fwpuclnt.dll
+0x6e1b0000 - 0x6e1b6000 	C:\Windows\system32\rasadhlp.dll
+0x74c40000 - 0x74c45000 	C:\Windows\System32\wshtcpip.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:50795 -Dfile.encoding=GBK 
+java_command: com.xls.test.FileViewer
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\Java\jdk1.6.0_10
+CLASSPATH=.;D:\Java\jdk1.6.0_10\lib\dt.jar;D:\Java\jdk1.6.0_10\lib\tools.jar;
+PATH=D:/Java/jre6/bin/client;D:/Java/jre6/bin;D:/Java/jre6/lib/i386;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Windows7Master;D:\TortoiseSVN\bin;D:\VisualSVN Server\bin;D:\Java\jdk1.6.0_10\bin;D:\Java\jdk1.6.0_10\jre\bin;.;D:\android-sdks\platform-tools;D:\android-sdks\tools;D:\ant\bin; D:\ant\lib;;D:\eclipse;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.1 Build 7601 Service Pack 1
+
+CPU:total 8 (8 cores per cpu, 2 threads per core) family 6 model 10 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, ht
+
+Memory: 4k page, physical 2097151k(2070024k free), swap 4194303k(4194303k free)
+
+vm_info: Java HotSpot(TM) Client VM (11.0-b15) for windows-x86 JRE (1.6.0_10-rc2-b32), built on Sep 12 2008 00:52:11 by "java_re" with MS VC++ 7.1
+
+time: Wed Mar 19 14:00:44 2014
+elapsed time: 137 seconds
+
